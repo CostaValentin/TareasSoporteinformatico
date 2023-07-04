@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario tarea</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="col-sm-9">
+          <a class="navbar-brand" href="#">Tincosa.</a>
+        </div>
+        <button
+          class="navbar-toggler bg-transparent"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-sm-3" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <form class="w-50 mx-auto bg-dark p-5 rounded m-5" action="" id="form">
+      <div class="form-group py-2">
+        <input
+          type="text"
+          class="form-control validationCustom02 bg-transparent text-light"
+          id="name"
+          aria-describedby="emailHelp"
+          placeholder="Enter name"
+        />
+        <div class="invalid-feedback">The name has a maximum of 10 characters</div>
+      </div>
+      <div class="form-group py-2">
+        <input
+          type="password"
+          class="form-control bg-transparent text-light"
+          id="pass"
+          placeholder="Password"
+        />
+        <div class="invalid-feedback">The password needs a uppercase at least. </div>
+      </div>
+      <button type="submit" id="btn" class="btn btn-primary w-100">
+        Submit
+      </button>
+    </form>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
